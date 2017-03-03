@@ -1,18 +1,19 @@
 #!/usr/bin/env node
 
-var chalk = require('chalk');
+const chalk = require('chalk');
+const {red, white, bold, bgBlue, bgWhite, bgRed} = require('chalk');
 
 // style a string
-console.log(chalk.white.bold.bgBlue(' *   *   *   *   *   *   * ') + chalk.bgRed('                                                    '));
-console.log(chalk.white.bold.bgBlue('   *   *   *   *   *   *   ') + chalk.bgWhite('                                                    '));
-console.log(chalk.white.bold.bgBlue(' *   *   *   *   *   *   * ') + chalk.bgRed('                                                    '));
-console.log(chalk.white.bold.bgBlue('   *   *   *   *   *   *   ') + chalk.bgWhite('                                                    '));
-console.log(chalk.white.bold.bgBlue(' *   *   *   *   *   *   * ') + chalk.bgRed('                                                    '));
-console.log(chalk.white.bold.bgBlue('   *   *   *   *   *   *   ') + chalk.bgWhite('                                                    '));
-console.log(chalk.white.bold.bgBlue(' *   *   *   *   *   *   * ') + chalk.bgRed('                                                    '));
-console.log(chalk.bgWhite('                                                                               '));
-console.log(chalk.bgRed('                                                                               '));
-console.log(chalk.bgWhite('                                                                               '));
-console.log(chalk.bgRed('                                                                               '));
-console.log(chalk.bgWhite('                                                                               '));
-console.log(chalk.bgRed('                                                                               '));
+console.log(bgBlue.white.bold(' *   *   *   *   *   *   * ') + bgRed('                                                 '));
+console.log(bgBlue.white.bold('   *   *   *   *   *   *   ') + bgWhite('                                                 '));
+console.log(bgBlue.white.bold(' *   *   *   *   *   *   * ') + bgRed('                                                 '));
+console.log(bgBlue.white.bold('   *   *   *   *   *   *   ') + bgWhite('                                                 '));
+console.log(bgBlue.white.bold(' *   *   *   *   *   *   * ') + bgRed('                                                 '));
+console.log(bgBlue.white.bold('   *   *   *   *   *   *   ') + bgWhite('                                                 '));
+console.log(bgBlue.white.bold(' *   *   *   *   *   *   * ') + bgRed('                                                 '));
+console.log(bgWhite('                                                                            '));
+console.log(bgRed('                                                                            '));
+console.log(bgWhite('                                                                            '));
+console.log(bgRed('                                                                            '));
+console.log(bgWhite('                                                                            '));
+console.log(bgRed('                                                                            '));
