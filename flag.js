@@ -3,18 +3,16 @@
 const chalk = require('chalk');
 const {red, white, bold, bgBlue, bgWhite, bgRed} = require('chalk');
 const star = '\u2606';
-console.log(star)
-// style a string
-console.log(bgBlue.white.bold(` ${star}   ${star}   ${star}   ${star}   ${star}   ${star}   ${star} `) + bgRed('                                                 '));
-console.log(bgBlue.white.bold(`   ${star}   ${star}   ${star}   ${star}   ${star}   ${star}   `) + bgWhite('                                                 '));
-console.log(bgBlue.white.bold(` ${star}   ${star}   ${star}   ${star}   ${star}   ${star}   ${star} `) + bgRed('                                                 '));
-console.log(bgBlue.white.bold(`   ${star}   ${star}   ${star}   ${star}   ${star}   ${star}   `) + bgWhite('                                                 '));
-console.log(bgBlue.white.bold(` ${star}   ${star}   ${star}   ${star}   ${star}   ${star}   ${star} `) + bgRed('                                                 '));
-console.log(bgBlue.white.bold(`   ${star}   ${star}   ${star}   ${star}   ${star}   ${star}   `) + bgWhite('                                                 '));
-console.log(bgBlue.white.bold(` ${star}   ${star}   ${star}   ${star}   ${star}   ${star}   ${star} `) + bgRed('                                                 '));
-console.log(bgWhite('                                                                            '));
-console.log(bgRed('                                                                            '));
-console.log(bgWhite('                                                                            '));
-console.log(bgRed('                                                                            '));
-console.log(bgWhite('                                                                            '));
-console.log(bgRed('                                                                            '));
+
+
+for (i = 0; i < 13; i++) {
+  if (i % 2 === 0 && i < 7) {
+    console.log(bgBlue.white.bold(` ${star}   ${star}   ${star}   ${star}   ${star}   ${star}   ${star} `) + bgRed('                                                 '));
+  } else if (i % 2 === 1 && i < 7) {
+    console.log(bgBlue.white.bold(`   ${star}   ${star}   ${star}   ${star}   ${star}   ${star}   `) + bgWhite('                                                 '));
+  } else if (i % 2 === 1 && i > 6) {
+    console.log(bgWhite('                                                                            '));
+  } else if (i % 2 === 0 && i > 6) {
+    console.log(bgRed('                                                                            '));
+  }
+}
