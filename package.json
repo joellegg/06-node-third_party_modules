@@ -1,0 +1,22 @@
+{
+  "name": "06-node-third_party_modules",
+  "version": "1.0.0",
+  "description": "## Requirements",
+  "main": "flag.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joellegg/06-node-third_party_modules.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joellegg/06-node-third_party_modules/issues"
+  },
+  "homepage": "https://github.com/joellegg/06-node-third_party_modules#readme",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
